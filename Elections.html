@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta charset="utf-8" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="jquery-1.12.1.min.js"></script>
+<script>
+$(document).ready(function(){$("#bs").click( function() {
+var text = $("#v11").html()+":محليا العدالة"+"\r\n"+$("#v21").html()+":وطنيا العدالة";
+text += "\r\n"+$("#v12").html()+":محليا الجرار"+"\r\n"+$("#v22").html()+":وطنيا الجرار";
+text += "\r\n"+$("#v13").html()+":محليا الوردة"+"\r\n"+$("#v23").html()+":وطنيا الوردة";
+text += "\r\n"+$("#v14").html()+":محليا الحمامة"+"\r\n"+$("#v24").html()+":وطنيا الحمامة";
+text += "\r\n"+$("#v15").html()+":محليا الكتاب"+"\r\n"+$("#v25").html()+":وطنيا الكتاب";
+text += "\r\n"+$("#v16").html()+":محليا الحصان"+"\r\n"+$("#v26").html()+":وطنيا الحصان";
+text += "\r\n"+$("#v17").html()+":محليا سنبل"+"\r\n"+$("#v27").html()+":وطنيا سنبل";
+text += "\r\n"+$("#v18").html()+":محليا صنبر"+"\r\n"+$("#v28").html()+":وطنيا صنبر";
+text += "\r\n"+$("#v19").html()+":محليا الغزالة"+"\r\n"+$("#v29").html()+":وطنيا الغزالة";
+var filename = "resultats_d-elections";
+var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+saveAs(blob, filename+".txt");
+$("#rf").html(text);
+});});
+</script>
+<style>
+.fdv{margin-top:10px;}
+.btn{font-family: fantasy;font-size: x-large;font-weight: bolder;width: 100px;}
+.fix{list-style: none;padding: 0;}.ttl{position: absolute;font-size: larger;margin-left: -20px;}
+.div{width: 50%;float: left;}.vl{margin-bottom: 0px;margin-top: 0px;}
+.fix1{background: aqua;}.fix2{background: antiquewhite;}.fix3{background: beige;}.fix4{background: cadetblue;}.fix5{background: blueviolet;}.fix6{background: coral;}.fix7{background: darkcyan;}.fix8{background: yellow;}.fix9{background: blue;}
+</style>
+</head>
+<body>
+<center>
+<div class="fdv">
+<div class="div">
+<h1 class="b">المحلية</h1>
+<ul class="fix fix1">
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v11').innerHTML, 10)+1;document.getElementById('v11').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v11">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v11').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix2">
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v12').innerHTML, 10)+1;document.getElementById('v12').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v12">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v12').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix3">
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v13').innerHTML, 10)+1;document.getElementById('v13').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v13">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v13').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix4">
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v14').innerHTML, 10)+1;document.getElementById('v14').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v14">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v14').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix5">
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v15').innerHTML, 10)+1;document.getElementById('v15').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v15">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v15').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix6">
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v16').innerHTML, 10)+1;document.getElementById('v16').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v16">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v16').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix7">
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v17').innerHTML, 10)+1;document.getElementById('v17').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v17">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v17').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix8">
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v18').innerHTML, 10)+1;document.getElementById('v18').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v18">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v18').innerHTML-=1;"/></li>
+</ul><ul class="fix fix9">
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v19').innerHTML, 10)+1;document.getElementById('v19').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v19">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v19').innerHTML-=1;"/></li>
+</ul>
+</div>
+<div class="div">
+<h1 class="b">الوطنية</h1>
+<ul class="fix fix1">
+<li><h1 class="ttl">العدالة</h1></li>
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v21').innerHTML, 10)+1;document.getElementById('v21').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v21">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v1').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix2">
+<li><h1 class="ttl">الجرار</h1></li>
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v22').innerHTML, 10)+1;document.getElementById('v22').innerHTML=v;"/></li>
+<li><h1  class="vl" id="v22">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v22').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix3">
+<li><h1 class="ttl">الوردة</h1></li>
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v23').innerHTML, 10)+1;document.getElementById('v23').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v23">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v23').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix4">
+<li><h1 class="ttl">الحمامة</h1></li>
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v24').innerHTML, 10)+1;document.getElementById('v24').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v24">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v24').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix5">
+<li><h1 class="ttl">الكتاب</h1></li>
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v25').innerHTML, 10)+1;document.getElementById('v25').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v25">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v25').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix6">
+<li><h1 class="ttl">الحصان</h1></li>
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v26').innerHTML, 10)+1;document.getElementById('v26').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v26">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v26').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix7">
+<li><h1 class="ttl">سنبل</h1></li>
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v27').innerHTML, 10)+1;document.getElementById('v27').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v27">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v27').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix8">
+<li><h1 class="ttl">صنبر</h1></li>
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v28').innerHTML, 10)+1;document.getElementById('v28').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v28">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v28').innerHTML-=1;"/></li>
+</ul>
+<ul class="fix fix9">
+<li><h1 class="ttl">الغزالة</h1></li>
+<li><input type="button" value="+" class="btn" onclick="var v=parseInt(document.getElementById('v29').innerHTML, 10)+1;document.getElementById('v29').innerHTML=v;"/></li>
+<li><h1 class="vl" id="v29">0</h1></li>
+<li><input type="button" value="-" class="btn" onclick="document.getElementById('v29').innerHTML-=1;"/></li>
+</ul>
+</div>
+</div>
+<input type="button" id="bs" value="حفظ" class="btn" />
+</center>
+</body>
+</html
